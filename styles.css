@@ -60,7 +60,7 @@ body {
 }
 
 .form-row {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
@@ -73,9 +73,14 @@ body {
 }
 
 .input-group input:focus {
+    outline: none;
+    border: 1px solid blue;
+}
+
+.input-group input:invalid {
+    outline: none;
     border: 1px solid #D55C5F;
     color: #D55C5F;
-    box-shadow: none;
 }
 
 .input-group input {
@@ -90,9 +95,26 @@ body {
 
 .input-group label {
     font-family: Quivert, sans-serif;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
 }
 
 .create-account-div {
     background: rgb(230, 230, 230);
+    flex: 1;
+    padding-left: 40px;
+    padding-top: 30px;
+}
+
+#create-btn {
+    background: rgb(123, 175, 235);
+    color: white;
+    font-size: 15px;
+    font-weight: 800;
+    border-radius: 8px;
+    padding: 10px 20px;
+    border: none;
+}
+
+#login-text {
+    color: rgb(123, 175, 235);
 }
