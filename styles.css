@@ -1,0 +1,98 @@
+@font-face {
+    font-family: Quivert;
+    src: url("./fonts/Quivert.otf");
+}
+
+body {
+    font-family: Quivert,'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    display: flex;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+#sidebar-picture {
+    width: 700px;
+    height: auto;
+}
+
+.body {
+    flex: 1;
+    display: flex; 
+}
+
+.sidebar {
+    width: 700px;
+    flex-shrink: 0;
+}
+
+.form-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.text-box {
+    background: rgb(230, 230, 230);
+    padding-left: 40px;
+    padding-right: 350px;
+    border-style: border-box;
+    padding-top: 100px;
+    padding-bottom: 50px; 
+
+}
+
+.text-box > p {
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.form {
+    box-shadow: inset;
+    padding-left: 40px;
+    padding-right: 400px;
+}
+
+.form > p {
+    font-size: 24px;
+    font-weight: 600;
+    color: rgb(49, 49, 49);
+}
+
+.form-row {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    margin-right: 60px;
+}
+
+.input-group input:focus {
+    border: 1px solid #D55C5F;
+    color: #D55C5F;
+    box-shadow: none;
+}
+
+.input-group input {
+    background: #FFFFFF;
+    border: 1px solid #D6D9DC;
+    border-radius: 3px;
+    width: 250px;
+    padding: 7px;
+    font-size: 14px;
+    height: initial;
+}
+
+.input-group label {
+    font-family: Quivert, sans-serif;
+    margin-bottom: 15px;
+}
+
+.create-account-div {
+    background: rgb(230, 230, 230);
+}
